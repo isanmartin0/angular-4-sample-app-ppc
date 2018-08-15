@@ -1,0 +1,69 @@
+openshift:
+  templatePath: kube/nginx_template.yaml
+
+imageStreamNodejsVersion: 6
+
+angularCli:
+  installGloballyAngularCli: false
+  installAngularCliSpecificVersion: true
+  angularCliVersion: 1.0.5
+
+nginxVersion: 112
+
+ngBuildProd:
+  useBuildProdFlags: true
+  buildProdFlags:  --aot=false
+
+environmentVariables:
+  # environmentVariable1: value1
+
+npmRegistryPublish:
+  - release
+
+confirmDeploy:
+  - master
+
+timeoutConfirmDeploy: true
+timeoutConfirmDeployTime: 30
+timeoutConfirmDeployUnit: MINUTES
+
+testing:
+  predeploy:
+    unitTesting:
+      - feature
+      - develop
+      - release
+      - hotfix
+    sonarQube:
+      - feature
+      - develop
+      - release
+      - hotfix
+
+  postdeploy:
+    smokeTesting:
+      # - release
+      # - master
+    securityTesting:
+      # - develop
+      # - release
+    performanceTesting:
+      # - release
+      # - hotfix
+    acceptanceTesting:
+      # - develop
+      # - release
+
+notifications:
+  branch:
+    - feature
+    - develop
+    - release
+    - master
+    - hotfix
+type: slack
+
+jenkins:
+  maxOldBuildsToKeep: 10
+  daysOldBuildsToKeep: 0
+  errorOnPostDeployTestsUnstableResult: true
