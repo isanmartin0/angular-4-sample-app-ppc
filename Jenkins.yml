@@ -4,7 +4,7 @@ openshift:
 imageStreamNodejsVersion: 6
 
 angularCli:
-  installGloballyAngularCli: true
+  installGloballyAngularCli: false
   installAngularCliSpecificVersion: true
   angularCliVersion: 1.0.5
 
