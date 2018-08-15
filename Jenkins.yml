@@ -4,18 +4,18 @@ openshift:
 imageStreamNodejsVersion: 6
 
 angularCli:
-  installGloballyAngularCli: false
+  installGloballyAngularCli: true
   installAngularCliSpecificVersion: true
   angularCliVersion: 1.0.5
 
-nginxVersion: 112
+nginxVersion: 110
 
 ngBuildProd:
   useBuildProdFlags: true
-  buildProdFlags:  --aot=false
+  buildProdFlags:  --aot=false --build-optimizer
 
 environmentVariables:
-  # environmentVariable1: value1
+   environmentVariable1: value1
 
 npmRegistryPublish:
   - release
