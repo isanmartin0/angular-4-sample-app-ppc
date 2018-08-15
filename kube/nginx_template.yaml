@@ -60,7 +60,7 @@ objects:
           value: ${ARTIFACTORY_TOKEN}
         from:
           kind: ImageStreamTag
-          name: nginx-${NGINX_VERSION}:latest
+          name: nodejs:8
           namespace: openshift
     output:
       to:
