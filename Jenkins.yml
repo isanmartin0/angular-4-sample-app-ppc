@@ -5,6 +5,16 @@ imageStreamNodejsVersion: 8
 
 removeSourcePackageLock: false
 
+installedDependencies:
+  showGlobalInstalledDependencies: true
+  showGlobalInstalledDependenciesDepthLimit: true
+  showGlobalInstalledDependenciesDepth: 1
+  showLocalInstalledDependencies: true
+  showLocalInstalledDependenciesDepthLimit: true
+  showLocalInstalledDependenciesDepth: 0
+  showLocalInstalledDependenciesOnlyType: false
+  showLocalInstalledDependenciesType: dev
+
 angularCli:
   installGloballyAngularCli: false
   installAngularCliSpecificVersion: true
@@ -17,10 +27,10 @@ ngBuildProd:
   buildProdFlags:  --aot=false --build-optimizer
 
 environmentVariables:
-  environmentVariable1: value1
+  # environmentVariable1: value1
 
 npmRegistryPublish:
-  - release
+  # - release
 
 confirmDeploy:
   - master
