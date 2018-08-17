@@ -10,10 +10,10 @@ installedDependencies:
   showGlobalInstalledDependenciesDepthLimit: true
   showGlobalInstalledDependenciesDepth: 1
   showLocalInstalledDependencies: true
-  showLocalInstalledDependenciesDepthLimit: true
+  showLocalInstalledDependenciesDepthLimit: false
   showLocalInstalledDependenciesDepth: 0
-  showLocalInstalledDependenciesOnlyType: false
-  showLocalInstalledDependenciesType: dev
+  showLocalInstalledDependenciesOnlyType: true
+  showLocalInstalledDependenciesType: prod
 
 angularCli:
   installGloballyAngularCli: true
