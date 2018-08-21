@@ -69,7 +69,7 @@ testing:
       # - hotfix
     acceptanceTesting:
       # - develop
-      # - release
+      - release
 
 notifications:
   branch:
