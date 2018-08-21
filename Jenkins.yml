@@ -63,9 +63,9 @@ testing:
       # - master
     securityTesting:
       # - develop
-      # - release
+      - release
     performanceTesting:
-      # - release
+      - release
       # - hotfix
     acceptanceTesting:
       # - develop
