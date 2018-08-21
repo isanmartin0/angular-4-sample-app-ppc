@@ -59,7 +59,7 @@ testing:
     timeoutConfirmPostDeployTestsTime: 30
     timeoutConfirmPostDeployTestsUnit: MINUTES
     smokeTesting:
-      # - release
+      - release
       # - master
     securityTesting:
       # - develop
