@@ -24,7 +24,9 @@ nginxVersion: '1.8'
 
 ngBuildProd:
   useBuildProdFlags: true
-  buildProdFlags:  --aot=false --build-optimizer
+  buildProdFlags:  --aot=false
+  useSpecificOutputPath: false
+  buildSpecificOutputPath: dist/
 
 environmentVariables:
   # environmentVariable1: value1
@@ -53,6 +55,9 @@ testing:
       - hotfix
 
   postdeploy:
+    timeoutConfirmPostDeployTests: true
+    timeoutConfirmPostDeployTestsTime: 30
+    timeoutConfirmPostDeployTestsUnit: MINUTES
     smokeTesting:
       # - release
       # - master
