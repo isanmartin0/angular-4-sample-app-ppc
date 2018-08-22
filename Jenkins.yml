@@ -44,7 +44,7 @@ timeoutConfirmDeployUnit: MINUTES
 testing:
   predeploy:
     useUnitTestingFlags: true
-    unitTestingFlags: ----browsers Firefox --watch=false --code-coverage
+    unitTestingFlags: ----browsers ChromeHeadless --watch=false --code-coverage
     unitTesting:
       - feature
       - develop
