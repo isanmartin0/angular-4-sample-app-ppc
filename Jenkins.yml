@@ -72,9 +72,9 @@ testing:
       - hotfix
     sonarQubeAnalisis:
       sonarSources: src
-      sonarExclusions: **/node_modules/**,**/*.spec.ts
+      sonarExclusions: "**/node_modules/**,**/*.spec.ts"
       sonarTests: e2e
-      sonarTestInclusions: **/*.e2e-spec.ts,**/*.po.ts
+      sonarTestInclusions: "**/*.e2e-spec.ts,**/*.po.ts"
       sonarTSTSLintConfigPath: tslint.json
       sonarTestExecutionReportPath: reports/test-report.xml
       sonarCoverageReportPath: coverage/lcov.info
