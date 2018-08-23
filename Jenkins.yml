@@ -45,7 +45,7 @@ testing:
   predeploy:
     useUnitTestingFlags: false
     unitTestingFlags: --browsers ChromeHeadless --watch=false --code-coverage
-    useUnitTestingKarmaConfigurationFileSpecificPath: false
+    useUnitTestingKarmaConfigurationFileSpecificPath: true
     unitTestingKarmaConfigurationFileSpecificPath: src/
     unitTesting:
       - feature
