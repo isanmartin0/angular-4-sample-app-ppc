@@ -43,20 +43,24 @@ timeoutConfirmDeployUnit: MINUTES
 
 testing:
   predeploy:
-    useUnitTestingFlags: true
-    unitTestingFlags: ----browsers ChromeHeadless --watch=false --code-coverage
+    useUnitTestingFlags: false
+    unitTestingFlags: --browsers ChromeHeadless --watch=false --code-coverage
+    useUnitTestingKarmaConfigurationFileSpecificPath: false
+    unitTestingKarmaConfigurationFileSpecificPath: /
     unitTesting:
       - feature
       - develop
-      #  - release
+      - release
       - hotfix
     sonarQube:
       - feature
       - develop
       - release
       - hotfix
-    useE2eTestingFlags: false
+    useE2ETestingFlags: false
     e2eTestingFlags:
+    useE2ETestingProtractorConfigurationFileSpecificPath: false
+    e2eTestingProtractorConfigurationFileSpecificPath: /
     e2eTesting:
       - feature
       - develop
