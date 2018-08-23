@@ -48,7 +48,7 @@ testing:
     unitTesting:
       - feature
       - develop
-      - release
+      #  - release
       - hotfix
     sonarQube:
       - feature
