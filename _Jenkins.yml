@@ -3,6 +3,11 @@ openshift:
 
 imageStreamNodejsVersion: 8
 
+angularCli:
+  installGloballyAngularCli: false
+  installAngularCliSpecificVersion: true
+  angularCliVersion: 1.0.5
+
 removeSourcePackageLock: true
 
 showInstalledDependencies:
@@ -15,12 +20,7 @@ showInstalledDependencies:
   showLocalInstalledDependenciesOnlyType: true
   showLocalInstalledDependenciesType: dev
 
-angularCli:
-  installGloballyAngularCli: false
-  installAngularCliSpecificVersion: true
-  angularCliVersion: 1.0.5
 
-nginxVersion: '1.8'
 
 ngBuildProd:
   useBuildProdFlags: true
@@ -33,6 +33,8 @@ environmentVariables:
 
 npmRegistryPublish:
   # - release
+
+nginxVersion: '1.8'
 
 confirmDeploy:
   - master
