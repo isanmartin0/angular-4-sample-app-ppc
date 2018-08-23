@@ -59,8 +59,8 @@ testing:
       - hotfix
     useE2ETestingFlags: false
     e2eTestingFlags:
-    useE2ETestingProtractorConfigurationFileSpecificPath: false
-    e2eTestingProtractorConfigurationFileSpecificPath: xx
+    useE2ETestingProtractorConfigurationFileSpecificPath: true
+    e2eTestingProtractorConfigurationFileSpecificPath: xx/
     e2eTesting:
       - feature
       - develop
