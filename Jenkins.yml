@@ -45,7 +45,7 @@ testing:
   predeploy:
     useUnitTestingFlags: false
     unitTestingFlags: --browsers ChromeHeadless --watch=false --code-coverage
-    useUnitTestingKarmaConfigurationFileSpecificPath: true
+    useUnitTestingKarmaConfigurationFileSpecificPath: false
     unitTestingKarmaConfigurationFileSpecificPath:
     unitTesting:
       - feature
@@ -59,7 +59,7 @@ testing:
       - hotfix
     useE2ETestingFlags: false
     e2eTestingFlags:
-    useE2ETestingProtractorConfigurationFileSpecificPath: true
+    useE2ETestingProtractorConfigurationFileSpecificPath: false
     e2eTestingProtractorConfigurationFileSpecificPath: xx
     e2eTesting:
       - feature
