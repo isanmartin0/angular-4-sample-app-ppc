@@ -43,8 +43,8 @@ timeoutConfirmDeployUnit: MINUTES
 
 testing:
   predeploy:
-    useLintingFlags: true
-    lintingFlags: --format json --force false
+    useLintingFlags: false
+    lintingFlags: --format json --force true
     linting:
       - feature
       - develop
