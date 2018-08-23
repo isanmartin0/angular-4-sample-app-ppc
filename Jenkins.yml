@@ -16,7 +16,7 @@ showInstalledDependencies:
   showLocalInstalledDependenciesType: dev
 
 angularCli:
-  installGloballyAngularCli: true
+  installGloballyAngularCli: false
   installAngularCliSpecificVersion: true
   angularCliVersion: 1.0.5
 
@@ -43,8 +43,8 @@ timeoutConfirmDeployUnit: MINUTES
 
 testing:
   predeploy:
-    useLintingFlags: false
-    lintingFlags: --format json --force true
+    useLintingFlags: true
+    lintingFlags: --format json --force false
     linting:
       - feature
       - develop
@@ -84,6 +84,7 @@ testing:
       sonarTests: e2e
       sonarTestInclusions: "**/*.e2e-spec.ts,**/*.po.ts"
       sonarTSTSLintConfigPath: tslint.json
+      sonarTypescriptExclusions: "**/node_modules/**,**/typings.d.ts,**/main.ts,**/environments/environment*.ts,**/*routing.module.ts"
       sonarTestExecutionReportPath: reports/test-report.xml
       sonarCoverageReportPath: coverage/lcov.info
 
