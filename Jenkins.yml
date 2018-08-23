@@ -43,7 +43,6 @@ timeoutConfirmDeployUnit: MINUTES
 
 testing:
   predeploy:
-
     useUnitTestingFlags: false
     unitTestingFlags: --browsers ChromeHeadless --watch=false --code-coverage
     useUnitTestingKarmaConfigurationFileSpecificPath: false
@@ -56,7 +55,7 @@ testing:
 
     useE2ETestingFlags: false
     e2eTestingFlags:
-    useE2ETestingProtractorConfigurationFileSpecificPath: true
+    useE2ETestingProtractorConfigurationFileSpecificPath: false
     e2eTestingProtractorConfigurationFileSpecificPath:
     e2eTesting:
       - feature
