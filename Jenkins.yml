@@ -60,7 +60,7 @@ testing:
     useE2ETestingFlags: false
     e2eTestingFlags:
     useE2ETestingProtractorConfigurationFileSpecificPath: true
-    e2eTestingProtractorConfigurationFileSpecificPath: xx/
+    e2eTestingProtractorConfigurationFileSpecificPath:
     e2eTesting:
       - feature
       - develop
