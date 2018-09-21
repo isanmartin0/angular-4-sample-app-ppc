@@ -21,7 +21,7 @@ showInstalledDependencies:
   showLocalInstalledDependenciesType: dev
 
 ngBuild:
-  useBuildFlags: false
+  useBuildFlags: true
   buildFlags:  --aot=false
   useSpecificOutputPath: false
   buildSpecificOutputPath: dist/
