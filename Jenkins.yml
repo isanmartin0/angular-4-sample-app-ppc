@@ -42,7 +42,7 @@ environmentVariables:
   # environmentVariable1: value1
 
 npmRegistryPublish:
-  # - release
+  - master
 
 nginxVersion: '1.8'
 
