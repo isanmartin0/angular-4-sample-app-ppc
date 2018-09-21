@@ -60,6 +60,7 @@ testing:
       - develop
       - release
       - hotfix
+      - master
 
     useUnitTestingFlags: false
     unitTestingFlags: --browsers ChromeHeadless --watch=false --code-coverage
@@ -70,6 +71,7 @@ testing:
       - develop
       - release
       - hotfix
+      - master
 
     useE2ETestingFlags: false
     e2eTestingFlags:
@@ -80,6 +82,7 @@ testing:
       - develop
       - release
       - hotfix
+      - master
 
     useKarmaSonarQubeReporterSpecificVersion: false
     karmaSonarQubeReporterSpecificVersion: 1.2.0
@@ -88,6 +91,7 @@ testing:
       - develop
       - release
       - hotfix
+      - master
     sonarQubeAnalisis:
       sonarSources: src
       sonarExclusions: "**/node_modules/**,**/*.spec.ts"
