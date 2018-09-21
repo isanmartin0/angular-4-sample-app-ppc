@@ -22,11 +22,21 @@ showInstalledDependencies:
 
 
 
-ngBuildProd:
-  useBuildProdFlags: true
-  buildProdFlags:  --aot=false
+ngProd:
+  useBuildFlags: true
+  buildFlags:  --aot=false
   useSpecificOutputPath: false
   buildSpecificOutputPath: dist/
+  flagProdBranches:
+    - release
+    - hotfix
+    - master
+  buildEnvironments:
+    environmentDevelop: dev
+    environmentFeature: dev
+    environmentRelease: uat
+    environmentHotfix: uat
+    environmentMaster: prod
 
 environmentVariables:
   # environmentVariable1: value1
