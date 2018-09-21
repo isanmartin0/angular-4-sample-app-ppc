@@ -20,10 +20,8 @@ showInstalledDependencies:
   showLocalInstalledDependenciesOnlyType: true
   showLocalInstalledDependenciesType: dev
 
-
-
-ngProd:
-  useBuildFlags: true
+ngBuild:
+  useBuildFlags: false
   buildFlags:  --aot=false
   useSpecificOutputPath: false
   buildSpecificOutputPath: dist/
